@@ -133,13 +133,13 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/events/get` | Get all events (with pagination) |
-| GET | `/events/get/:id` | Get event by ID |
-| POST | `/events/create` | Create new event |
-| PATCH | `/events/update/:id` | Update event |
-| DELETE | `/events/delete/:id` | Delete event |
+| GET | `/events` | Get all events (with pagination) |
+| GET | `/events/:id` | Get event by ID |
+| POST | `/events` | Create new event |
+| PATCH | `/events/:id` | Update event |
+| DELETE | `/events/:id` | Delete event |
 | GET | `/events/check-overlap` | Check for time conflicts |
-| GET | `/categories/get` | Get all categories |
+| GET | `/categories` | Get all categories |
 
 
 ## Troubleshooting

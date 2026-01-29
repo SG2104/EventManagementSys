@@ -12,15 +12,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8000/events/get-all?limit=10&offset=0",
+          "raw": "http://localhost:8000/events?limit=10&offset=0",
           "protocol": "http",
           "host": [
             "localhost"
           ],
           "port": "8000",
           "path": [
-            "events",
-            "get-all"
+            "events"
           ],
           "query": [
             {
@@ -42,7 +41,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8000/events/get/89caabe7-5eb3-489b-b989-2ce6068ca088",
+          "raw": "http://localhost:8000/events/89caabe7-5eb3-489b-b989-2ce6068ca088",
           "protocol": "http",
           "host": [
             "localhost"
@@ -50,7 +49,6 @@
           "port": "8000",
           "path": [
             "events",
-            "get",
             "89caabe7-5eb3-489b-b989-2ce6068ca088"
           ]
         }
@@ -78,15 +76,14 @@
           }
         },
         "url": {
-          "raw": "http://localhost:8000/events/create",
+          "raw": "http://localhost:8000/events",
           "protocol": "http",
           "host": [
             "localhost"
           ],
           "port": "8000",
           "path": [
-            "events",
-            "create"
+            "events"
           ]
         }
       },
@@ -132,7 +129,7 @@
           }
         },
         "url": {
-          "raw": "http://localhost:8000/events/update/d86d506b-9f1c-4c29-b759-0771ff425009",
+          "raw": "http://localhost:8000/events/d86d506b-9f1c-4c29-b759-0771ff425009",
           "protocol": "http",
           "host": [
             "localhost"
@@ -140,7 +137,6 @@
           "port": "8000",
           "path": [
             "events",
-            "update",
             "d86d506b-9f1c-4c29-b759-0771ff425009"
           ]
         }
@@ -160,7 +156,7 @@
           }
         ],
         "url": {
-          "raw": "http://localhost:8000/events/delete/89caabe7-5eb3-489b-b989-2ce6068ca088",
+          "raw": "http://localhost:8000/events/89caabe7-5eb3-489b-b989-2ce6068ca088",
           "protocol": "http",
           "host": [
             "localhost"
@@ -168,7 +164,6 @@
           "port": "8000",
           "path": [
             "events",
-            "delete",
             "89caabe7-5eb3-489b-b989-2ce6068ca088"
           ]
         }

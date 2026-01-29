@@ -28,7 +28,7 @@ const formatForInput = (isoString: string) => {
 const eventSchema = z
   .object({
     name: z.string().min(1, "Name is required"),
-    description: z.string().min(1, "Description is required"),
+    description: z.string().optional(),
     start_date_time: z.string().min(1, "Start time is required"),
     end_date_time: z.string().min(1, "End time is required"),
     categoryIds: z
@@ -183,7 +183,7 @@ export const EventModal = ({
       setIsSubmitting(true);
       const payload: EventFormData = {
         name: values.name,
-        description: values.description,
+        description: values.description ?? "",
         start_date_time: toIsoString(values.start_date_time),
         end_date_time: toIsoString(values.end_date_time),
         categoryIds: values.categoryIds,
@@ -317,8 +317,8 @@ export const EventModal = ({
                     key={category.id}
                     type="button"
                     className={` rounded-full border px-2.5 py-1 text-[0.72rem] font-medium transition ${active
-                        ? "border-sky-400 bg-sky-500 text-slate-900 shadow-sm"
-                        : "border-slate-600 bg-slate-950 text-slate-100 hover:border-slate-300 hover:-translate-y-px"
+                      ? "border-sky-400 bg-sky-500 text-slate-900 shadow-sm"
+                      : "border-slate-600 bg-slate-950 text-slate-100 hover:border-slate-300 hover:-translate-y-px"
                       }`}
                     onClick={() => handleCategoryToggle(category.id)}
                   >

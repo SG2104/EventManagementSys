@@ -43,11 +43,16 @@ This starts a PostgreSQL container with:
 
 ### 3. Configure Environment Variables
 
-- Copy .env.example to .env
-- Update with PostgreSQL connection:
+In the backend folder (`be`), copy `.env.example` to `.env`:
+
+The `.env.example` contains:
 
 ```bash
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/postgres
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_NAME=postgres
 ``` 
 
 ### 4. Install Dependencies

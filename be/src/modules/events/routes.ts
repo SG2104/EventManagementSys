@@ -4,10 +4,10 @@ import { createEvent, updateEvent, getEvents, getEventById, deleteEvent, checkOv
 const router = Router();
 
 router.get("/check-overlap", checkOverlap);
-router.get("/get-all", getEvents);
-router.get("/get/:id", getEventById);
-router.post("/create", createEvent);
-router.patch("/update/:id", updateEvent);
-router.delete("/delete/:id", deleteEvent);
+router.get("/", getEvents);
+router.get("/:id", getEventById);
+router.post("/", createEvent);
+router.patch("/:id", updateEvent);
+router.delete("/:id", deleteEvent);
 
 export default router;
